@@ -1,8 +1,13 @@
 import Head from "next/head";
+import { ReactNode } from "react";
 import Header from "../Header/Header";
 // import Footer from "../Footer";
-
-export default function Layout({ narrow = true, title = "boshd", children }) {
+type Props = {
+  narrow: boolean
+  title: string
+  children?: ReactNode;
+};
+const Layout = ({ narrow = true, title = "boshd", children }: Props) => {
   const pageTitle = title !== "boshd" ? `boshd - ${title}` : title;
 
   var width = !narrow ? "" : "max-w-7xl";
@@ -41,3 +46,5 @@ export default function Layout({ narrow = true, title = "boshd", children }) {
     </>
   );
 }
+
+export default Layout

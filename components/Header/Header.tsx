@@ -21,9 +21,10 @@ export default function Header() {
           {/* </div> */}
           <ul className="flex flex-col pt-12">
             {config.menuLinks.map((link) => (
-              <Link href={link.link}>
+              <Link key={link.name} href={link.link}>
                 <a
                   // href=""
+                  key={link.name}
                   target={'_blank'}
                   className="flex flex-row items-center h-6 transform transition-transform ease-in duration-25 text-gray-500 hover:text-gray-800"
                 //   className="flex flex-row items-center h-6 transform hover:translate-x-2 transition-transform ease-in duration-25 text-gray-500 hover:text-gray-800"

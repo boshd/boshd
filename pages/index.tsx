@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import Container from "../components/Container";
-import Layout from "../components/Layout/Layout";
+import Layout from "../components/Layout";
 import PostList from "../components/PostList";
 import { getAllPosts } from "../lib/api";
 import Post from "../models/post";
@@ -14,25 +14,25 @@ type Props = {
 
 const Home = ({ allPosts }: Props) => {
   return (
-    <Layout>
+    <Layout narrow={false} title={""} >
       <h1 className="text-1xl md:text-2xl lg:text-5xl font-bold tracking-tighter leading-tight md:leading-none mb-6 text-center md:text-left">
         kareem arab
       </h1>
 
-      <label className="text-gray-500" htmlFor="">
+      <label className="text-gray-500" >
         engineering @{" "}
-        <a className="text-blue-400" href="https://amadeus.com" target={"_blank"}>
+        <a className="text-blue-400" href="https://amadeus.com" target={"_blank"} rel="noreferrer">
           amadeus
         </a>{" "}
       </label>
       <br />
       <label className="text-gray-500">
         building{" "}
-        <a className="text-blue-400" href="https://t.co/Uv02Iv48XM" target={"_blank"}>
+        <a className="text-blue-400" href="https://t.co/Uv02Iv48XM" target={"_blank"} rel="noreferrer">
           handshake
         </a>
         ,{" "}
-        <a target={"_blank"} className="text-blue-400" href="https://rebrand.hyperscalefund.com/">
+        <a target={"_blank"} rel="noreferrer" className="text-blue-400" href="https://rebrand.hyperscalefund.com/">
           hyperscale fund
         </a>
       </label>
