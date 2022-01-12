@@ -11,14 +11,7 @@ ogImage:
   url: '/assets/blog/dynamic-routing/cover.jpg'
 ---
 
-The Hessian matrix is a matrix of a multivariate function's second derivatives. It describes the "curvature" of the landscape produced by that function.
-
-
-Preceding
-
-
-
-Following.
+in progress - The Hessian matrix is a matrix of a multivariate function's second derivatives. It describes the "curvature" of the landscape produced by that function.
 
 I like to think of it as the Jaccobian of the gradient $J(\triangledown f)$.
 

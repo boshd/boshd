@@ -1,7 +1,7 @@
 ---
 title: 'notes on the pumping lemma'
 category: 'note'
-excerpt: 'mini note on one of the core concepts in nonregular languages. mini note on one of the core concepts in nonregular languages. mini note on one of the core concepts in nonregular languages.'
+excerpt: 'mini note on one of the core concepts in nonregular languages'
 # coverImage: '/assets/blog/dynamic-routing/cover.jpg'
 date: '2020-03-16T05:35:07.322Z'
 author:
