@@ -7,12 +7,12 @@ import rehypeMathjax from 'rehype-mathjax'
 
 export default async function markdownToHtml(markdown: any) {
   const result = await unified()
-  .use(remarkRehype)
   .use(remarkParse)
-  .use(rehypeStringify)
+  .use(remarkRehype, null, {allowDangerousHtml: true})
+  .use(rehypeStringify, {allowDangerousHtml: true})
   .use(remarkMath)
   .use(rehypeMathjax)
   .process(markdown)
 
-  return String(result)
+  return result.toString()
 }

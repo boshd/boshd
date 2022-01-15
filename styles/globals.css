@@ -11,14 +11,3 @@ svg {
 }
 
 br { display:block; margin-top:10px; line-height:22px; }
-
-.text-highlight {
-    border-bottom: 10px solid #ffd17f;
-  }
-
-  .text-highlight {
-    display: inline-block;
-    border-bottom: 18px solid #ffd17f;
-    line-height: 4px;
-    padding: 0 2px;
-  }

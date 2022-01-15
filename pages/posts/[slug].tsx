@@ -36,10 +36,10 @@ const Post = ({ post, morePosts, preview }: Props) => {
                 <title>{post.title} | a note.</title>
                 <meta property="og:image" content={post.ogImage.url} />
               </Head>
-              <div className="pb-4 text-orange-400">
-                ←{" "}
+              <div className="pb-4">
+
                 <Link href="/">
-                  <a>back</a>
+                  <a className="bg-[#F2E39B] text-[#292b2c]">← back</a>
                 </Link>
               </div>
               <PostHeader title={post.title} coverImage={post.coverImage} date={post.date} author={post.author} />
