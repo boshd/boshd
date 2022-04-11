@@ -14,7 +14,7 @@ type Props = {
 
 const Home = ({ allPosts }: Props) => {
   return (
-    <Layout narrow={false} title={""} >
+    <Layout narrow={false} title={"boshd"} >
       <h1 className="text-1xl md:text-2xl lg:text-5xl font-bold tracking-tighter leading-tight md:leading-none mb-6 text-center md:text-left">
         kareem arab
       </h1>
@@ -43,6 +43,18 @@ const Home = ({ allPosts }: Props) => {
 
       <div className="pt-6 pb-6">
         <hr className="text-gray-200" />
+      </div>
+
+      <div>
+      iframe test
+      youtube iframe
+
+      <iframe src="https://www.youtube.com/embed/cWDJoK8zw58" frameBorder={2}></iframe>
+
+      portal iframe
+
+      <iframe src="https://p1.tcgms.net/portal/client/DevinTest/en/page/landing" frameBorder={2}></iframe>
+
       </div>
 
       <div>
