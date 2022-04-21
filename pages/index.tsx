@@ -46,18 +46,6 @@ const Home = ({ allPosts }: Props) => {
       </div>
 
       <div>
-      iframe test
-      youtube iframe
-
-      <iframe src="https://www.youtube.com/embed/cWDJoK8zw58" frameBorder={2}></iframe>
-
-      portal iframe
-
-      <iframe src="https://p1.tcgms.net/portal/client/DevinTest/en/page/landing" frameBorder={2}></iframe>
-
-      </div>
-
-      <div>
         <h1 className="text-1xl md:text-2xl lg:text-1xl tracking-tighter leading-tight md:leading-none mb-4 text-center md:text-left">
           notes
         </h1>
