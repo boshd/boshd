@@ -32,7 +32,7 @@ const Home = ({ allPosts }: Props) => {
           handshake
         </a>
         ,{" "}
-        <a target={"_blank"} rel="noreferrer" className="text-blue-400" href="https://rebrand.hyperscalefund.com/">
+        <a target={"_blank"} rel="noreferrer" className="text-blue-400" href="https://hyperscalefund.com/">
           hyperscale fund
         </a>
       </label>
