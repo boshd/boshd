@@ -45,6 +45,14 @@ const Home = ({ allPosts }: Props) => {
         <hr className="text-gray-200" />
       </div>
 
+      portal iframe
+
+      <iframe src="https://p1.tcgms.net/portal/client/DevinTest/en/page/landing" frameBorder={2}></iframe>
+
+      youtube iframe
+
+      <iframe src="https://www.youtube.com/embed/cWDJoK8zw58" frameBorder={2}></iframe>
+
       <div>
         <h1 className="text-1xl md:text-2xl lg:text-1xl tracking-tighter leading-tight md:leading-none mb-4 text-center md:text-left">
           notes
