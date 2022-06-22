@@ -31,10 +31,6 @@ const Home = ({ allPosts }: Props) => {
         <a className="text-blue-400" href="https://t.co/Uv02Iv48XM" target={"_blank"} rel="noreferrer">
           handshake
         </a>
-        ,{" "}
-        <a target={"_blank"} rel="noreferrer" className="text-blue-400" href="https://hyperscalefund.com/">
-          hyperscale fund
-        </a>
       </label>
       {/* <br /> */}
       {/* <label className="text-gray-500">
