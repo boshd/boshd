@@ -1,12 +1,6 @@
-import type { NextPage } from "next";
-import Head from "next/head";
-import Image from "next/image";
-import Container from "../components/Container";
-import Layout from "../components/Layout";
 import PostList from "../components/PostList";
 import { getAllPosts } from "../lib/api";
 import Post from "../models/post";
-import styles from "../styles/Home.module.css";
 
 type Props = {
   allPosts: Post[];
@@ -14,12 +8,12 @@ type Props = {
 
 const Home = ({ allPosts }: Props) => {
   return (
-    <Layout narrow={false} title={"boshd"} >
+    <>
       <h1 className="text-1xl md:text-2xl lg:text-5xl font-bold tracking-tighter leading-tight md:leading-none mb-6 text-center md:text-left">
         kareem arab
       </h1>
 
-      <label className="text-gray-500" >
+      <label className="text-gray-500">
         engineering @{" "}
         <a className="text-blue-400" href="https://amadeus.com" target={"_blank"} rel="noreferrer">
           amadeus
@@ -29,38 +23,23 @@ const Home = ({ allPosts }: Props) => {
       <label className="text-gray-500">
         building{" "}
         <a className="text-blue-400" href="https://t.co/Uv02Iv48XM" target={"_blank"} rel="noreferrer">
-          handshake
+          principal
         </a>
       </label>
-      {/* <br /> */}
-      {/* <label className="text-gray-500">
-        side things: ios, infra, ml, web3, music
-      </label> */}
 
       <div className="pt-6 pb-6">
         <hr className="text-gray-200" />
       </div>
 
+      {allPosts && allPosts.length > 8}
+
       <div>
         <h1 className="text-1xl md:text-2xl lg:text-1xl tracking-tighter leading-tight md:leading-none mb-4 text-center md:text-left">
           notes
         </h1>
-        {allPosts.forEach((post) => {
-          <h1>{post.title}</h1>;
-        })}
         <PostList posts={allPosts} />
       </div>
-
-      {allPosts.filter((post) => post.category == "thought") !== []}
-
-      {/* <div className="pt-8">
-        <h1 className="text-1xl md:text-2xl lg:text-1xl tracking-tighter leading-tight md:leading-none mb-4 text-center md:text-left">
-          miscellaneous thoughts
-        </h1>
-
-        <PostList posts={allPosts.filter((post) => post.category == "thought")} />
-      </div> */}
-    </Layout>
+    </>
   );
 };
 

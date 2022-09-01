@@ -24,31 +24,28 @@ const Post = ({ post, morePosts, preview }: Props) => {
     return <ErrorPage statusCode={404} />;
   }
   return (
-    <Layout narrow={false} title={""}>
-      <Container>
-        {/* <Header /> */}
-        {router.isFallback ? (
-          <PostTitle>Loading…</PostTitle>
-        ) : (
-          <>
-            <article className="mb-32">
-              <Head>
-                <title>{post.title} | a note.</title>
-                <meta property="og:image" content={post.ogImage.url} />
-              </Head>
-              <div className="pb-4">
-
-                <Link href="/">
-                  <a className="bg-[#F2E39B] text-[#292b2c]">← back</a>
-                </Link>
-              </div>
-              <PostHeader title={post.title} coverImage={post.coverImage} date={post.date} author={post.author} />
-              <PostBody content={post.content} />
-            </article>
-          </>
-        )}
-      </Container>
-    </Layout>
+    <Container>
+      {/* <Header /> */}
+      {router.isFallback ? (
+        <PostTitle>Loading…</PostTitle>
+      ) : (
+        <>
+          <article className="mb-32">
+            <Head>
+              <title>{post.title} | a note.</title>
+              <meta property="og:image" content={post.ogImage.url} />
+            </Head>
+            <div className="pb-4">
+              <Link href="/">
+                <a className="bg-[#F2E39B] text-[#292b2c]">← back</a>
+              </Link>
+            </div>
+            <PostHeader title={post.title} coverImage={post.coverImage} date={post.date} author={post.author} />
+            <PostBody content={post.content} />
+          </article>
+        </>
+      )}
+    </Container>
   );
 };
 
@@ -61,7 +58,16 @@ type Params = {
 };
 
 export async function getStaticProps({ params }: Params) {
-  const post = getPostBySlug(params.slug, ["title", "category", "date", "slug", "author", "content", "ogImage", "coverImage"]);
+  const post = getPostBySlug(params.slug, [
+    "title",
+    "category",
+    "date",
+    "slug",
+    "author",
+    "content",
+    "ogImage",
+    "coverImage",
+  ]);
   const content = await markdownToHtml(post.content || "");
 
   return {

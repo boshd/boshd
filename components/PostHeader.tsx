@@ -1,8 +1,7 @@
-import Avatar from '../Avatar'
-import DateFormatter from '../DateFormatter'
-import CoverImage from '../CoverImage'
-import PostTitle from '../PostTitle'
-import Author from '../../models/author'
+import DateFormatter from './DateFormatter'
+import CoverImage from './CoverImage'
+import PostTitle from './PostTitle'
+import Author from '../models/author'
 
 type Props = {
   title: string
@@ -16,9 +15,6 @@ const PostHeader = ({ title, coverImage, date, author }: Props) => {
     <>
       <div className="">
         <PostTitle>{title}</PostTitle>
-        {/* <div className="hidden md:block md:mb-12">
-          <Avatar name={author.name} picture={author.picture} />
-        </div> */}
         {
           coverImage!=null ?
             <div className="mb-8 md:mb-16 sm:mx-0">
@@ -27,9 +23,6 @@ const PostHeader = ({ title, coverImage, date, author }: Props) => {
           <div/>
         }
 
-        {/* <div className="block md:hidden mb-6">
-          <Avatar name={author.name} picture={author.picture} />
-        </div> */}
         <div className="mb-6 text-lg text-[#CAD2D4]">
           <DateFormatter dateString={date} />
         </div>
