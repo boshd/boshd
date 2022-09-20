@@ -10,8 +10,8 @@ function MyApp({ Component, pageProps }: AppProps) {
       <ThemeProvider
         disableTransitionOnChange
         attribute="class"
-        value={{ light: "light-theme", dark: darkTheme.className }}
-        defaultTheme="system"
+        value={{ light: "theme", dark: darkTheme }}
+        // defaultTheme="theme"
       >
         <Layout narrow={false} title={""}>
           <Component {...pageProps} />

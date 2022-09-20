@@ -9,8 +9,8 @@ import rehypePrettyCode from "rehype-pretty-code";
 export default async function markdownToHtml(markdown: any) {
   const result = await unified()
     .use(remarkParse)
-    .use(remarkRehype, null, { allowDangerousHtml: true })
-    .use(rehypeStringify, { allowDangerousHtml: true })
+    .use(remarkRehype)
+    .use(rehypeStringify)
     .use(remarkMath)
     .use(rehypeMathjax)
     .use(rehypePrettyCode, {

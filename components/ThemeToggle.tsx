@@ -14,9 +14,9 @@ export const ThemeToggle = (props: any) => {
       aria-label="toggle a light and dark color scheme"
     >
       {theme == "light" ? (
-        "dark"
+        "toggle dark"
       ) : (
-        "light"
+        "toggle light"
       )}
     </Button>
   );
