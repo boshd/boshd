@@ -22,7 +22,7 @@ const Home = ({ allPosts }: Props) => {
       <br />
       <label className="text-gray-500">
         building{" "}
-        <a className="text-blue-400" href="https://t.co/Uv02Iv48XM" target={"_blank"} rel="noreferrer">
+        <a className="text-blue-400" href="https://withprincipal.com/" target={"_blank"} rel="noreferrer">
           principal
         </a>
       </label>
