@@ -1,0 +1,120 @@
+\documentclass[9pt]{article}
+\usepackage{array,longtable, pagecolor, xcolor}
+\usepackage{lipsum}
+\usepackage{fourier}
+\usepackage{hyperref}
+\usepackage[T1]{fontenc}
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist
+\usepackage[bottom=1cm, left=0cm, right=4cm, top=1.0cm]{geometry}
+\pagenumbering{gobble}
+\pagecolor{white}
+
+\makeatletter
+\newcommand{\globalcolor}[1]{%
+  \color{#1}\global\let\default@color\current@color
+}
+\makeatother
+
+\AtBeginDocument{\globalcolor{black}}
+
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=blue,
+    pdftitle={Kareem's resume},
+    bookmarks=true,
+    pdfpagemode=FullScreen,
+}
+
+\begin{document}
+
+    \begin{changemargin}{2cm}{-2cm}
+        \begin{center}
+        {\huge Kareem Arab}\par\smallskip\smallskip
+
+        \begin{minipage}[b]{0.33333\textwidth}
+        \centering
+            me@kareemarab.com  \par
+            % 613.255.5483 --- Ottawa, Canada\par
+            Ottawa, Canada - Remote\par
+            \textbf{\href{http://kareemarab.com}{kareemarab.com}}
+        \end{minipage}
+        \end{center}
+    \end{changemargin}
+
+    \begin{longtable}{@{}>{\raggedleft}p{0.25\linewidth}
+                          p{\dimexpr0.75\linewidth-2\tabcolsep-\arrayrulewidth\relax}>{}p{0.25\linewidth}@{}}
+
+        \textbf{languages}
+            & \textbf{\textsc{Python --- Java --- Swift --- TypeScript --- Go (Elementary proficiency)}} \\ [0.5em]
+        \textbf{frameworks and technologies}
+            & \textbf{\textbf{iOS --- XCode --- Realm --- NextJS --- React --- Serverless --- GCP --- AWS --- K8s --- Helm --- Docker --- Vault --- CI/CD (GH Actions, Jenkins, Spinnaker) --- TensorFlow --- MySQL --- Redis --- DynamoDB --- Ionic --- Firebase --- Rancher --- Splunk --- Latex}} \\ [0.2em]
+
+        \textbf{processes}
+            & \textbf{\textbf{Kanban, Agile \& Scrum}} \\ [0.5em]
+
+        \textbf{work experience}
+            & \textbf{\textsc{\href{https://amadeus.com/en}{Amadeus}}} & \textit{Mar 2021 - present}\\
+            & \textit{Full Stack Engineer} \\
+            & - Help develop and integrate \textbf{Multi-Factor Authentication (MFA)} into an existing authentication service, enhancing account security for users. \\
+            & - Developed and executed multiple service migration to \textbf{Rancher k8s} + \textbf{caching}, resulting in self-healing deployments, increased capacity and reduced database load for Black Friday (result: success/no prod issues). \\
+            & - Mitigated xss attacks by developing an end-to-end reporting solution. \\
+            & - Led \textbf{scrum \& grooming} sessions, pushing multiple features into the development pipeline + \textbf{onboarding} new engineers. \\
+            & - Worked w/ a \textbf{hybrid} system architecture (on-prem servers \& \textbf{GCP}) \\ [0.5em]
+
+            & \textbf{\textsc{\href{https://www.neurovine.ai/}{Neurovine}}} & \textit{Apr 2019 - Feb 2021}\\
+            & \textit{Software Engineer} \\
+            & - Developed \textbf{APIs} built on \textbf{AWS Lambda} (serverless) in \textbf{Python} that drove our mobile and research portal apps. It also drove our internal data-science pipeline. \\
+		    & - Shipped a consumer mobile app \& a research portal built w/ \textbf{Ionic}. \\
+		    & - Collaborated w/ the Data Science team to build a \textbf{real-time} \textbf{ml} pipeline. \\
+		    & - Helped implement \textbf{HIPAA} requirements across our systems. \\ [1em]
+
+        \textbf{education}
+            & \textbf{\textsc{Carleton University}} & \textit{Spring 2020} \\
+            & Bachelor of Computer Science (BSc) \\ [1em]
+
+        \textbf{projects}
+            & \textbf{\textsc{Principal} } & \textit{present} \\
+            & - Financial management tool for small businesses. Stack: Go \& React\\ [0.5em]
+
+            & \textbf{\textsc{Handshake} } & \textit{2020-2022} \\
+            & - Private real-time group chat w/ built-in event management. Stack: iOS - Swift \& Serverless - Typescript \\ [0.5em]
+
+            & \textbf{\textsc{\href{https://github.com/boshd/rp}{\textbf{rp}}}} & \textit{2018} \\
+            & - A multithreaded HTTP Redis proxy server w/ an LRU cache. \\ [0.5em]
+
+            & \textbf{\textsc{\href{https://github.com/boshd/advatck}{\textbf{Guassian/Carlini-Wagner Adversarial Attacks}}}}\ & \textit{Winter 2020} \\
+            & - Gaussian \& Adversarial Perturbations on a CNN's input space. \\ [0.5em]
+
+            & \textbf{\textsc{\href{https://github.com/boshd/neuralnets}{\textbf{Neural Networks}}}} & \textit{Summer 2020} \\
+            & - A collection of neural network implementations built u/ \textbf{TensorFlow}. \\ [0.5em]
+
+            & ** More \textbf{projects} on \textit{\href{https://github.com/boshd}{\textbf{github}}}.\\ [1em]
+
+                \textbf{research}
+            & \textbf{\textsc{IoT Lab @ Carleton University}} & \textit{2017 - 2019} \\
+            & \textit{Undergraduate Researcher} \\
+            & - Conducted research on the best ml model applications on Smart Grid energy data. \\
+            & - Built a real-time multi-modal data streaming system using a Rasp. Pi \& IBM Cloud. \\ [0.5em]
+
+            & \textbf{\textsc{Diabetes Coach (Macadamian---IoT Lab)}} & \textit{Winter 2018} \\
+            & - Type II diabetes self management tool. \\ [1em]
+
+        \textbf{achievements}
+            & \textbf{\textsc{Shopify --- Build Things App Award}} & \textit{Nov 2018} \\
+            & \textit{Winner of the best App award @ Shopify's Build Things App Showcase}. \\ [1em]
+
+        \textbf{publications}
+            & \textbf{\textsc{AI for Diabetes Mellitus Type II: Forecasting and Anomaly Detection}} & \textit{2019}\\
+            & \textit{Author --- IEEE Wireless Communications and Networking Conference}  \\ [0.5em]
+            & ** More \textbf{publications} on \textit{\href{https://scholar.google.ca/citations?user=zFDREhgAAAAJ\&hl=en}{\textbf{Scholar}}}.\\ [0.5em]
+            % & \textbf{\textsc{Data Communication and Analytics for Smart Grid Systems}} & \textit{2018}\\
+            % & \textit{Co-author --- IEEE International Conference on Communications}\\ [1em]
+
+
+  \end{longtable}
+
+\end{document}
