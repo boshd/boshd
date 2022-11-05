@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.20)  1 NOV 2022 09:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.20)  5 NOV 2022 10:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -445,7 +445,7 @@ Package hyperref Info: Link coloring ON on input line 32.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 
-Overfull \hbox (136.72098pt too wide) in alignment at lines 49--118
+Overfull \hbox (136.72098pt too wide) in alignment at lines 49--117
  [] [] [] 
  []
 
@@ -458,13 +458,13 @@ Package rerunfilecheck Info: File `resume.out' has not changed.
 Here is how much of TeX's memory you used:
  10045 strings out of 475075
  160566 string characters out of 5779003
- 625233 words of memory out of 5000000
+ 624233 words of memory out of 5000000
  31308 multiletter control sequences out of 15000+600000
  498993 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,6n,77p,383b,429s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/adobe/utopia/putbi8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on resume.pdf (1 page, 73176 bytes).
+Output written on resume.pdf (1 page, 72345 bytes).
 PDF statistics:
  43 PDF objects out of 1000 (max. 8388607)
  31 compressed objects within 1 object stream
