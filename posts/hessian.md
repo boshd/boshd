@@ -1,8 +1,8 @@
 ---
-title: 'notes on the hessian'
+title: 'Hessian'
 category: 'note'
 excerpt: 'a dive into the specifics of the hessian and its taylor approximation'
-# coverImage: '/assets/blog/dynamic-routing/cover.jpg'
+# coverImage: './public/posts/figure1.png'
 date: '2020-03-16T05:35:07.322Z'
 author:
   name: Kareem

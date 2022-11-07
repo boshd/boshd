@@ -12,6 +12,7 @@ export default function Header() {
             <div className="pl-9">
               <ThemeToggle />
             </div>
+            <div className="mt-4">
             {config.menuLinks.map((link) => (
               <Link key={link.name} href={link.link}>
                 <a
@@ -27,6 +28,7 @@ export default function Header() {
                 </a>
               </Link>
             ))}
+            </div>
           </ul>
         </div>
       </div>

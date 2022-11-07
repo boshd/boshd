@@ -12,7 +12,9 @@ export default async function markdownToHtml(markdown: any) {
     .use(remarkRehype)
     .use(rehypeStringify)
     .use(remarkMath)
-    .use(rehypeMathjax)
+    .use(rehypeMathjax, {
+
+    })
     .use(rehypePrettyCode, {
       // Use one of Shiki's packaged themes
       theme: "one-dark-pro",

@@ -35,7 +35,7 @@ const Home = ({ allPosts }: Props) => {
 
       <div>
         <h1 className="text-1xl md:text-2xl lg:text-1xl tracking-tighter leading-tight md:leading-none mb-4 text-center md:text-left">
-          notes
+          napkin notes
         </h1>
         <PostList posts={allPosts} />
       </div>

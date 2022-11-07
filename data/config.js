@@ -42,6 +42,10 @@ const config = {
 			name: 'music',
 			link: 'https://soundcloud.com/itsmeka',
 		},
+		{
+			name: 'resume',
+			link: 'https://kareemarab.com/resume.pdf',
+		},
 	],
 	themeColor: '#3F80FF',
 	backgroundColor: '#ffffff',

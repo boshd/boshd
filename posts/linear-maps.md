@@ -1,5 +1,5 @@
 ---
-title: 'notes on linear maps'
+title: 'Linear maps'
 category: 'note'
 excerpt: 'basics of linear maps'
 # coverImage: '/assets/blog/dynamic-routing/cover.jpg'

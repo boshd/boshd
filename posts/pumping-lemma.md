@@ -1,5 +1,5 @@
 ---
-title: 'notes on the pumping lemma'
+title: 'Pumping lemma'
 category: 'note'
 excerpt: 'mini note on one of the core concepts in nonregular languages'
 # coverImage: '/assets/blog/dynamic-routing/cover.jpg'

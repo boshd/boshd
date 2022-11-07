@@ -3,11 +3,19 @@
 @tailwind utilities;
 
 .svg {
-    display: inline-block;
+  display: inline-block;
 }
 
 svg {
-    display: inline-block;
+  display: inline-block;
 }
 
-br { display:block; margin-top:10px; line-height:22px; }
+br {
+  display: block;
+  margin-top: 10px;
+  line-height: 22px;
+}
+
+.MathJax {
+  font-size: 0.9em;
+}
