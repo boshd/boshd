@@ -21,7 +21,7 @@ export default class extends Document {
           <meta name="theme-color" content="#08070b" />
           <style id="stitches" dangerouslySetInnerHTML={{ __html: getCssText() }} />
 
-          <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml" />
+          <link rel="icon" href="favicon.ico?" type="image/x-icon" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
           <link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet" />
