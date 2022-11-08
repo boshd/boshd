@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import config from "../data/config";
-import { ThemeToggle } from "../components/ThemeToggle";
+import { ThemeToggle } from "./ThemeToggle";
 
 export default function Header() {
   return (
@@ -19,7 +19,7 @@ export default function Header() {
                   // href=""
                   key={link.name}
                   target={"_blank"}
-                  className="flex flex-row items-center h-6 transform transition-transform ease-in duration-25 text-gray-500 hover:text-gray-800"
+                  className="flex flex-row items-center h-6 transform transition-transform ease-in duration-25 font-body text-gray-500 hover:text-gray-800"
                 >
                   <span className="inline-flex items-center justify-center h-4 w-12 text-lg text-gray-400">
                     <i className="bx bx-home"></i>

@@ -12,6 +12,7 @@ export const ThemeToggle = (props: any) => {
       onClick={() => (theme === "dark" ? setTheme("light") : setTheme("dark"))}
       {...props}
       aria-label="toggle a light and dark color scheme"
+      className="font-body text-sm"
     >
       {theme == "light" ? (
         "toggle dark"

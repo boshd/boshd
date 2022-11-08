@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { ReactNode } from "react";
-import Header from "./Header";
+import Header from "./Sidebar";
 // import Footer from "../Footer";
 type Props = {
   narrow: boolean
@@ -8,7 +8,7 @@ type Props = {
   children?: ReactNode;
 };
 const Layout = ({ narrow = true, title = "boshd", children }: Props) => {
-  const pageTitle = title !== "boshd" ? `boshd - ${title}` : title;
+  const pageTitle = title !== "boshd" ? `mi casa is su casa` : title;
 
   var width = !narrow ? "" : "max-w-7xl";
 
