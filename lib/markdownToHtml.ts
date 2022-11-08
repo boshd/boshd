@@ -5,11 +5,13 @@ import remarkParse from "remark-parse";
 import rehypeStringify from "rehype-stringify";
 import rehypeMathjax from "rehype-mathjax";
 import rehypePrettyCode from "rehype-pretty-code";
+import rehypeRaw from "rehype-raw";
 
 export default async function markdownToHtml(markdown: any) {
   const result = await unified()
     .use(remarkParse)
     .use(remarkRehype)
+    .use(rehypeRaw)
     .use(rehypeStringify)
     .use(remarkMath)
     .use(rehypeMathjax, {
