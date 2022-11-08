@@ -28,7 +28,7 @@ const Home = ({ allPosts }: Props) => {
         </label>
 
         <div className="pt-6 pb-6">
-          <hr className="text-gray-200" />
+        <div className="w-full border-t border-gray-400" />
         </div>
 
         {allPosts && allPosts.length > 8}
