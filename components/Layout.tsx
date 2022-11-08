@@ -20,14 +20,6 @@ const Layout = ({ narrow = true, title = "boshd", children }: Props) => {
         <link rel="icon" href="../public/favicon.ico?" type="image/x-icon" />
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
-      {/* <div
-        style={{
-          backgroundImage: "url('/img/navigation-background.svg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center center",
-          backgroundRepeat: "no-repeat",
-        }}
-      > */}
       <div className="flex flex-row">
         <div className="h-full max-w-7xl px-4 xl:px-0">
           <Header />
