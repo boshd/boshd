@@ -37,7 +37,7 @@ const Post = ({ post, morePosts, preview }: Props) => {
             </Head>
             <div className="pb-4">
               <Link href="/">
-                <a className="font-body">← go back to where you came from</a>
+                <a className="font-body">← go back</a>
               </Link>
             </div>
             <PostHeader title={post.title} coverImage={post.coverImage} date={post.date} author={post.author} />
