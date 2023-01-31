@@ -21,10 +21,7 @@ const Home = ({ allPosts }: Props) => {
         </label>
         <br />
         <label className="text-gray-500">
-          building{" "}
-          <a className="text-blue-400" href="https://withprincipal.com/" target={"_blank"} rel="noreferrer">
-            principal
-          </a>
+          building principal (personal banking search)
         </label>
 
         <div className="pt-6 pb-6">
