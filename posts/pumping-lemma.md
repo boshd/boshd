@@ -3,7 +3,7 @@ title: 'Pumping lemma'
 category: 'note'
 excerpt: 'mini note on one of the core concepts in nonregular languages'
 # coverImage: '/assets/blog/dynamic-routing/cover.jpg'
-date: '2020-03-16T05:35:07.322Z'
+date: '2021-03-16T05:35:07.322Z'
 author:
   name: Kareem
   # picture: '/assets/blog/authors/jj.jpeg'

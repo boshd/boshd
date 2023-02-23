@@ -3,7 +3,7 @@ title: 'Hessian'
 category: 'note'
 excerpt: 'a dive into the specifics of the hessian and its taylor approximation'
 # coverImage: './public/posts/figure1.png'
-date: '2020-03-16T05:35:07.322Z'
+date: '2022-03-16T05:35:07.322Z'
 author:
   name: Kareem
   # picture: '/assets/blog/authors/jj.jpeg'

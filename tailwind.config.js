@@ -5,7 +5,8 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      'display': ['Nabla'],
+      // 'display': ['Nabla'],
+
       'body': ['Newsreader'],
     },
     extend: {
