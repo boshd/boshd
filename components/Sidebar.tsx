@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <>
       <div className="min-h-screen flex flex-row">
-        <div className="flex flex-col w-40">
+        <div className="flex flex-col w-40 sm:hidden">
           <ul className="flex flex-col pt-12">
             <div className="pl-9">
               <ThemeToggle />

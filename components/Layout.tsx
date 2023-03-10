@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { ReactNode } from "react";
 import Header from "./Sidebar";
+
 // import Footer from "../Footer";
 type Props = {
   narrow: boolean
