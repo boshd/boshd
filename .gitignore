@@ -38,4 +38,5 @@ yarn-error.log*
 
 public/*
 !public/resume.pdf
+!public/posts/*
 public/inprog
