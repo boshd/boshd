@@ -9,7 +9,7 @@ type Props = {
   children?: ReactNode;
 };
 const Layout = ({ narrow = true, title = "boshd", children }: Props) => {
-  const pageTitle = title !== "boshd" ? `welcome to mi casa` : title;
+  const pageTitle = title !== "boshd" ? `hi` : title;
 
   var width = !narrow ? "" : "max-w-7xl";
 
