@@ -52,6 +52,6 @@ $mod \text{ } p$ indicates that the curve is defined over a finite field of prim
 
 The multiplicity of $g$ produces a *seemingly* random point on the elliptic curve. Guessing the multiplier for a high prime order is computationally *infeasible* due to difficulty.
 
-![elliptic curve space example](/posts/pkc/fig1.png "Elliptic curve space example")
+![elliptic curve space example](./pkc/fig1.png "Elliptic curve space example")
 
 Elliptic curve addition is defined by $P_3=P_1+P_2$, where $P_3$ is also on the elliptic curve. Geometrically, a straight line is drawn between $P_1$ & $P_2$ which will intersect the curve in **one** additional place, $P_3$. $P_3'=(x,y)$, then reflect in the x-axis to get $P_3=(x,-y)$.
