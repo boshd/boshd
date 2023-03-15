@@ -1,7 +1,7 @@
 ---
 title: "Gradient descent and beyond"
 category: "note"
-excerpt: "some explanation here"
+excerpt: "Gradient descent & co."
 # coverImage: './public/posts/figure1.png'
 date: "2023-03-15T05:35:07.322Z"
 author:
@@ -10,8 +10,6 @@ author:
 ogImage:
   url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
-
-<!-- We'll start by defining each concept and use them to build up to gradient descent. -->
 
 In machine learning, optimization is king. Finding the best possible values for a model's parameters is crucial for creating accurate models that can yield useful predictions. At the heart of a machine learning algorithm lies a powerful optimization technique known as gradient descent that iteratively tweaks a model's parameters in the direction of steepest descent, minimizing its loss function. Beyond this foundational method lies a wealth of extensions, refinements, and alternatives developed over the years to tackle the challenges of modern machine learning. In this article, I'll briefly introduce the Gradient Descent and Newton method techniques in their simplest form. Stay tuned for more articles on this topic.
 
@@ -74,7 +72,7 @@ $$
 \vdots
 $$
 
-![gradient descent on parabola](./5figs.png "Gradient descent on a parabola")
+![gradient descent on parabola](../5figs.png "Gradient descent on a parabola")
 
 As we can see in the figures above, picking a suitable value for $\epsilon$ is very important to ensure that our algorithm behaves correctly. Selecting a value for $\epsilon$ that is too small can result in us undershooting the minimum and taking a long time to arrive there ($\epsilon=0.2$ figure). On the other hand, if we pick a value for $\epsilon$ that is too large, we risk overshooting the minimum, as shown in the $\epsilon=0.8$ figure.
 
@@ -123,10 +121,6 @@ $$
 
 Here, $\nabla f(x^{(0)})$ is the gradient of the function $f$ evaluated at point $x^{(0)}$. And this approximation is helpful because it captures the local behavior of the function around the point $x^{(0)}$.
 
-<!-- The approximation helps us pick a suitable step size $\epsilon$ that minimizes the function $f(x)$: -->
-
-<!-- Here, $||\nabla f(x^{(0)})||^2$ is the magnitude of the gradient of $f$ evaluated at $x^{(0)}$. -->
-
 Recall that an update is given by,
 
 $x = x_{0} - \epsilon g$
@@ -168,4 +162,4 @@ And just like that, we have successfully defined two of the most important optim
 - System design
 - Miscellaneous
 
-Drop your email here: [TypeForm]( https://vs6itw50puy.typeform.com/to/YWqHUfk5)
+Drop your email [here](https://vs6itw50puy.typeform.com/to/YWqHUfk5)

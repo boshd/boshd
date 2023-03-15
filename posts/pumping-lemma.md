@@ -1,7 +1,7 @@
 ---
 title: 'Pumping lemma'
 category: 'note'
-excerpt: 'mini note on one of the core concepts in nonregular languages'
+excerpt: 'just a reminder'
 # coverImage: '/assets/blog/dynamic-routing/cover.jpg'
 date: '2021-03-16T05:35:07.322Z'
 author:

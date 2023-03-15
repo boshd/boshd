@@ -1,7 +1,7 @@
 ---
 title: 'Partial auto-correlation function'
 category: 'note'
-excerpt: 'a reminder'
+excerpt: 'just a reminder'
 # coverImage: './public/posts/figure1.png'
 date: '2022-10-05T19:11:01+00:00'
 author:
