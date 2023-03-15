@@ -72,7 +72,7 @@ $$
 \vdots
 $$
 
-![gradient descent on parabola](../5figs.png "Gradient descent on a parabola")
+![gradient descent on a parabola](../5figs.png "Gradient descent on a parabola")
 
 As we can see in the figures above, picking a suitable value for $\epsilon$ is very important to ensure that our algorithm behaves correctly. Selecting a value for $\epsilon$ that is too small can result in us undershooting the minimum and taking a long time to arrive there ($\epsilon=0.2$ figure). On the other hand, if we pick a value for $\epsilon$ that is too large, we risk overshooting the minimum, as shown in the $\epsilon=0.8$ figure.
 
