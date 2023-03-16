@@ -34,7 +34,6 @@ const Post = ({ post, morePosts, preview }: Props) => {
             <Head>
               <title>{post.title}</title>
               <meta property="og:image" content={post.coverImage} />
-              <meta property="og:image:type" content="image/png" />
             </Head>
             <div className="pb-4">
               <Link href="/">
