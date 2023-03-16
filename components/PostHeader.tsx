@@ -15,6 +15,9 @@ const PostHeader = ({ title, coverImage, date, author }: Props) => {
     <>
       <div className="font-body">
         <PostTitle>{title}</PostTitle>
+        <div className="mb-6 text-lg text-[#CAD2D4]">
+          <DateFormatter dateString={date} />
+        </div>
         {coverImage != null ? (
           <div className="mb-8 md:mb-16 sm:mx-0">
             <CoverImage title={title} src={coverImage} />
@@ -23,9 +26,7 @@ const PostHeader = ({ title, coverImage, date, author }: Props) => {
           <div />
         )}
 
-        <div className="mb-6 text-lg text-[#CAD2D4]">
-          <DateFormatter dateString={date} />
-        </div>
+
         {/* <div className="mb-6 text-lg">
           ~2 min read
         </div> */}

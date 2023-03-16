@@ -2,13 +2,13 @@
 title: "Gradient descent and beyond"
 category: "note"
 excerpt: "Gradient descent & co."
-# coverImage: './public/posts/figure1.png'
+coverImage: '../loss-landscape.png'
 date: "2023-03-15T05:35:07.322Z"
 author:
   name: Kareem
   # picture: '/assets/blog/authors/jj.jpeg'
 ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
+  url: "../gd.jpeg"
 ---
 
 In machine learning, optimization is king. Finding the best possible values for a model's parameters is crucial for creating accurate models that can yield useful predictions. At the heart of a machine learning algorithm lies a powerful optimization technique known as gradient descent that iteratively tweaks a model's parameters in the direction of steepest descent, minimizing its loss function. Beyond this foundational method lies a wealth of extensions, refinements, and alternatives developed over the years to tackle the challenges of modern machine learning. In this article, I'll briefly introduce the Gradient Descent and Newton method techniques in their simplest form. Stay tuned for more articles on this topic.
