@@ -18,7 +18,7 @@ In machine learning, optimization is king. Finding the best possible values for 
 
 Gradient descent is an algorithm that minimizes a given model's loss function based on calculating the gradients of the loss landscape. Believe it or not, Gradient Descent was introduced by mathemetician and physicist Louis Augustin Cauchy in *1847*.
 
-We start with a loss/error function $L_\varepsilon\$ quantifying the difference between a model's predictions and the true values. The goal is to tweak the model's parameters/weights until the error is minimized. The model starts with randomly generated weights and iteratively changes them until they resemble the function we're trying to estimate.
+We start with a loss/error function $L_\varepsilon\$ that qunatifies the distance between a model's predictions and the true values. Starting out with random weights, the goal is to tweak them until the error is as small as possible.
 
 Tweaking the parameters is done by calculating the gradient of the loss function at a specific point and determining which direction we need to take to minimize the loss. This is given by
 
@@ -42,7 +42,7 @@ $$
 $$
 
 
-The gradient helps us measure the direction of the fastest rate of increase. Imagine looking down at the peak of a mountain range; what is the quickest path to the bottom? That is what the gradient tells us for any function in $R^{n}$.
+The gradient helps us measure the direction of the fastest rate of increase; but in GD, we negate this expression because we're interested in the fastest rate of descent. Imagine looking down at the peak of a mountain range; what is the quickest path to the bottom? That is what the gradient tells us for any function in $R^{n}$.
 
 Let's begin with a simple example. How do you find the minimum of the following function?
 
@@ -50,13 +50,13 @@ $$
 f(x) = x^{2}
 $$
 
-Let's first calculate the gradient of  w.r.t, which is simply the derivative:
+Let's first calculate the gradient of  w.r.t $x$, which is simply the derivative:
 
 $$
 \frac{\partial f}{\partial x} = 2x
 $$
 
-Then let's set $\epsilon=0.1$ and pick a random point $x_{0}=4$, to begin with. We can then take steps in the direction of the negative gradient of the function as follows, using the gradient descent equation we defined above:
+Then let's set the learning rate $\epsilon=0.1$ and pick a random point $x_{0}=4$, to begin with. We can then take steps in the direction of the negative gradient of the function as follows, using the gradient descent equation we defined above:
 
 $$
 x_{1} = 3 - (0.1 * 2(3)) = 2.4
@@ -76,7 +76,7 @@ $$
 
 As we can see in the figures above, picking a suitable value for $\epsilon$ is very important to ensure that our algorithm behaves correctly. Selecting a value for $\epsilon$ that is too small can result in us undershooting the minimum and taking a long time to arrive there ($\epsilon=0.2$ figure). On the other hand, if we pick a value for $\epsilon$ that is too large, we risk overshooting the minimum, as shown in the $\epsilon=0.8$ figure.
 
-And that's it (for the simplest form of GD)! We calculated the gradient of $x^2$, defined our optimization method $x_{n+1} = x_{n} - \epsilon \nabla f(x_{n})$, picked a suitable value for our learning rate $\epsilon$, a random starting point $x_0$ and successfully found the minimum.
+And that's it (for the simplest form of GD)! We calculated the gradient of $x^2$, defined our optimization method $x_{n+1} = x_{n} - \epsilon \nabla f(x_{n})$, picked a suitable value for our learning rate $\epsilon$, selected a random starting point $x_0$ and successfully found the minimum.
 
 In practice, we are often interested in finding the minimum of much more complicated functions over many iterations, known as forward and backward propagation, but that's a topic for another time.
 
@@ -88,7 +88,7 @@ Newton's method is another powerful optimization technique that can help us mini
 
 The Hessian matrix is a matrix of the second derivatives of a multivariate function. It describes the curvature of the landscape produced by that function. In other words, the Hessian matrix tells us how much the gradient of a function changes as we move along each coordinate axis.
 
-We can define the Hessian matrix of a function $f(x)$ as follows:
+We define the Hessian matrix of a function $f(x)$ as follows:
 
 $$
 H(f)(x)_{i,j} = \frac{\partial^2}{\partial x_i \partial x_j} f(x)
@@ -105,7 +105,7 @@ $$
 
 Here, $H(f)(x)$ is the Hessian matrix of the function $f$ evaluated at point $x$, and $H_{i,j}(f)(x)$ is its $(i,j)$-th entry.
 
-Also, note that the second derivatives are continuous, the differential operators are commutative,
+Also, note that if the second derivatives are continuous, the differential operators are commutative,
 
 $$
 \frac{\partial^2}{\partial x_i \partial x_j} f(x) = \frac{\partial^2}{\partial x_j \partial x_i} f(x)
@@ -119,11 +119,13 @@ $$
 f(x) \approx f(x_0) + (x-x_0)^T \triangledown f(x) + \frac{1}{2} (x-x_0)^T H(f)(x-x_0)
 $$
 
-Here, $\nabla f(x^{(0)})$ is the gradient of the function $f$ evaluated at point $x^{(0)}$. And this approximation is helpful because it captures the local behavior of the function around the point $x^{(0)}$.
+Here, $\nabla f(x)$ is the gradient of the function $f$ evaluated at point $x$. And this approximation is helpful because it captures the local behavior of the function around the point $x$.
 
 Recall that an update is given by,
 
-$x = x_{0} - \epsilon g$
+$$
+x = x_{0} - \epsilon g
+$$
 
 Therefore, the new point $x$ is given by $x_0 - \epsilon g$. If we substitute this expression in the approximation, we get,
 
@@ -136,11 +138,9 @@ $f(x_0)$ is the original value of the funciton,
 $\epsilon g^Tg$ is the expected imporvement due to the function's slope, and
 $\frac{1}{2} \epsilon^2 g^THg$ is the correction to account for the function's curvature.
 
-Note that when $\frac{1}{2} \epsilon^2 g^THg$ is large enough, the algorithm can diverge very quickly. On the other hand, if our approximation is sufficiently accurate, we converge very quickly.
+Note that when $\frac{1}{2} \epsilon^2 g^THg$ is large enough, the algorithm can diverge. On the other hand, if our approximation is sufficiently accurate, we converge very quickly.
 
-Finally, the different terms in the Taylor approximation are just tools to help us adjust to the different properties of the landsacape.
-
-If the last term is positive, the optimal step that effectively decreases the Taylor approximation yields:
+Finally, the different terms in the Taylor approximation are just tools to help us adjust to the different properties of the landsacape. If the last term is positive, the optimal step that effectively decreases the Taylor approximation yields:
 
 $$
 \epsilon^* = \frac{g^Tg}{g^THg}
