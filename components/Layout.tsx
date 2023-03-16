@@ -18,7 +18,7 @@ const Layout = ({ narrow = true, title = "boshd", children }: Props) => {
       <Head>
         <title>{pageTitle}</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <link rel="icon" href="../public/favicon.ico?" type="image/x-icon" />
+        <link rel="icon" href="../public/favicon.ico" type="image/x-icon" />
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
       <div className="flex flex-row">

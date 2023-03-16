@@ -156,7 +156,7 @@ This update rule is known as the Newton-Raphson method, and it can converge much
 
 In practice, gradient descent is often a more practical optimization algorithm, as it is simpler to implement and can work well for many optimization problems. However, there are cases where Newton-Raphson method or its variants, such as quasi-Newton methods like Broyden-Fletcher-Goldfarb-Shanno (BFGS) and limited-memory BFGS (L-BFGS), can outperform gradient descent.
 
-And just like that, we have successfully defined two of the most important optimzation methods in modern optimization thory. If you found this useful and would like to be notified of future artciles the following topics:
+And just like that, we have successfully defined two of the most important optimzation methods in modern optimization thory. If you found this useful and would like to be notified of future articles on (but not limited to) the following topics:
 - Computation theory
 - ML
 - System design
