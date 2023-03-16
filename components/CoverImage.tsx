@@ -12,6 +12,7 @@ const CoverImage = ({ title, src, slug }: Props) => {
     <img
       src={src}
       alt={`Cover Image for ${title}`}
+      title={`Cover Image for ${title}`}
       className={cn('', {
         '': slug,
       })}
