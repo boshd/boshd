@@ -40,4 +40,5 @@ yarn-error.log*
 !public/resume.pdf
 !public/5figs.png
 !public/posts/*
+!public/loss-landscape.png
 public/inprog
