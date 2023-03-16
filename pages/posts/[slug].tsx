@@ -32,8 +32,9 @@ const Post = ({ post, morePosts, preview }: Props) => {
         <>
           <article className="mb-32">
             <Head>
-              <title>{post.title} | a note.</title>
-              <meta property="og:image" content={post.ogImage.url} />
+              <title>{post.title}</title>
+              <meta property="og:image" content={post.coverImage} />
+              <meta property="og:image:type" content="image/png" />
             </Head>
             <div className="pb-4">
               <Link href="/">
