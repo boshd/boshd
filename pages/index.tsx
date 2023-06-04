@@ -1,3 +1,4 @@
+import Link from "next/link";
 import PostList from "../components/PostList";
 import { getAllPosts } from "../lib/api";
 import Post from "../models/post";
@@ -21,7 +22,7 @@ const Home = ({ allPosts }: Props) => {
         </label>
         <br />
         <label className="text-gray-500">
-          building principal (personal banking search)
+          building <Link href="https://withprincipal.com/">projects</Link>
         </label>
 
         <div className="pt-6 pb-6">
