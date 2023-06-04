@@ -22,11 +22,14 @@ const Home = ({ allPosts }: Props) => {
         </label>
         <br />
         <label className="text-gray-500">
-          building <Link href="https://withprincipal.com/">projects</Link>
+          building{" "}
+          <a className="text-blue-400" href="https://withprincipal.com" target={"_blank"} rel="noreferrer">
+            principal
+          </a>{" "}
         </label>
 
         <div className="pt-6 pb-6">
-        <div className="w-full border-t border-gray-400" />
+          <div className="w-full border-t border-gray-400" />
         </div>
 
         {allPosts && allPosts.length > 8}
