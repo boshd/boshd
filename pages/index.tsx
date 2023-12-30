@@ -10,10 +10,11 @@ type Props = {
 const Home = ({ allPosts }: Props) => {
   return (
     <>
-      <h1 className="text-1xl md:text-2xl lg:text-7xl font-display leading-tight md:leading-none mb-6 text-center md:text-left">
+      <h1 className="text-6xl md:text-6xl lg:text-7xl font-display leading-tight md:leading-none mb-6 text-center md:text-left">
         kareem arab
       </h1>
       <div className="font-body">
+        <div className="text-center md:text-left lg:text-left xl:text-left">
         <label className="text-gray-500">
           engineering @{" "}
           <a className="text-blue-400" href="https://amadeus.com" target={"_blank"} rel="noreferrer">
@@ -27,6 +28,8 @@ const Home = ({ allPosts }: Props) => {
             principal
           </a>{" "}
         </label>
+        </div>
+
 
         <div className="pt-6 pb-6">
           <div className="w-full border-t border-gray-400" />
