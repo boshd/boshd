@@ -34,6 +34,7 @@ const Post = ({ post, morePosts, preview }: Props) => {
             <Head>
               <title>{post.title}</title>
               <meta property="og:image" content={post.ogImage.url} />
+              <meta name="twitter:card" content="summary_large_image" />
               <meta name="twitter:title" content={post.title} />
               <meta
                 name="twitter:image"
