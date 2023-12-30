@@ -1,7 +1,7 @@
 ---
 title: 'Public key cryptography'
 category: 'note'
-excerpt: 'how does it work internally -- on a high-ish level'
+excerpt: 'how does it work internally — on a high-ish level'
 # coverImage: '/assets/blog/dynamic-routing/cover.jpg'
 date: '2022-11-07T14:31:35+00:00'
 author:
