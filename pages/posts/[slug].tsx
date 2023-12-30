@@ -34,6 +34,11 @@ const Post = ({ post, morePosts, preview }: Props) => {
             <Head>
               <title>{post.title}</title>
               <meta property="og:image" content={post.ogImage.url} />
+              <meta name="twitter:title" content={post.title} />
+              <meta
+                name="twitter:image"
+                content={post.ogImage.url}
+              />
             </Head>
             <div className="pb-4">
               <Link href="/">
