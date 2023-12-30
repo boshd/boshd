@@ -33,7 +33,7 @@ const Post = ({ post, morePosts, preview }: Props) => {
           <article className="mb-32">
             <Head>
               <title>{post.title}</title>
-              <meta property="og:image" content={"https://kareemarab.com/loss-landscape.png"} />
+              <meta property="og:image" />
             </Head>
             <div className="pb-4">
               <Link href="/">
