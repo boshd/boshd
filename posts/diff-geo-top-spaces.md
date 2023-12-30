@@ -6,6 +6,8 @@ coverImage: '../top-space.png'
 date: '2023-12-29T14:31:35+00:00'
 author:
   name: Kareem
+ogImage:
+  url: "../top-space.png"
 ---
 
 ### Definition
@@ -26,7 +28,7 @@ A function $f: X \rightarrow Y$ between two topological spaces is a **homeomorph
 2. **Continuity**: $f$ does not tear or glue the space; it's a smooth transformation.
 3. **Inverse Continuity**: The inverse function $f^{-1}$ is also continuous.
 
-![elliptic curve space example](../top-sp-d1.png "Elliptic curve space example")
+![diag1](../top-sp-d1.png "Diag1")
 
 When such a function exists, we say $X$ and $Y$ are **homeomorphic**, or topologically equivalent. This means they have the same shape or structure from a topological viewpoint, even if they look different geometrically.
 
