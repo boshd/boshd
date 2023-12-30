@@ -7,7 +7,7 @@ date: '2023-12-29T14:31:35+00:00'
 author:
   name: Kareem
 ogImage:
-  url: "../top-space.png"
+  url: "https://kareemarab.com/top-space.png"
 ---
 
 ### Definition
