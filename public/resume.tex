@@ -1,152 +1,13 @@
-% \documentclass[9pt]{article}
-% \usepackage{array,longtable, pagecolor, xcolor}
-% \usepackage{lipsum}
-% \usepackage{fourier}
-% \usepackage{hyperref}
-% \usepackage[T1]{fontenc}
-% \usepackage{fontawesome}
-% \def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
-% \let\endchangemargin=\endlist
-% \usepackage[bottom=0.5cm, left=0cm, right=4cm, top=1.0cm]{geometry}
-% \pagenumbering{gobble}
-% \pagecolor{white}
-
-% \makeatletter
-% \newcommand{\globalcolor}[1]{%
-%   \color{#1}\global\let\default@color\current@color
-% }
-% \makeatother
-
-% \AtBeginDocument{\globalcolor{black}}
-
-
-% \hypersetup{
-%     colorlinks=true,
-%     linkcolor=blue,
-%     filecolor=magenta,
-%     urlcolor=blue,
-%     pdftitle={Kareem's resume},
-%     pdfpagemode=FullScreen,
-% }
-
-% \begin{document}
-
-%     \begin{changemargin}{2cm}{-2cm}
-%         \begin{center}
-%         {\huge Kareem Arab}\par\smallskip\smallskip
-
-%         \begin{minipage}[b]{0.33333\textwidth}
-%         \centering
-%             Full stack generalist \par
-%             me@\href{http://kareemarab.com}{kareemarab.com} \par
-%             % 613.255.5483 --- Ottawa, Canada\par
-%             Ottawa, Canada --- Remote\par
-%             % \textbf{\href{http://kareemarab.com}{kareemarab.com}}
-%         \end{minipage}
-%         \end{center}
-%     \end{changemargin}
-
-%     \begin{longtable}{@{}>{\raggedleft}p{0.25\linewidth}
-%                           p{\dimexpr0.75\linewidth-2\tabcolsep-\arrayrulewidth\relax}>{}p{0.25\linewidth}@{}}
-
-%         \textbf{languages}
-%             & \textbf{\textsc{Python --- Go --- Swift --- TypeScript --- \LaTeX}} \\ [0.5em]
-
-%         \textbf{frameworks/technologies}
-%             & \textbf{\textbf{React --- NextJS --- iOS --- Serverless --- REST APIs --- Webhooks --- Websockets --- Kuberentes --- CI/CD (Jenkins, Actions, etc.) --- Firebase --- Terraform --- Vault --- \href{https://github.com/plaid/plaid-go}{Plaid}}} \\ [2em]
-
-%         \textbf{libraries}
-%             & \textbf{\textbf{Tensorflow --- UIKit --- Tailwind --- ReactQuery --- PyTorch (elementary proficiency)}} \\ [0.5em]
-
-%         \textbf{cloud platforms}
-%             & \textbf{\textbf{AWS --- GCP --- Azure --- Vercel}} \\ [0.5em]
-
-%         \textbf{databases}
-%             & \textbf{\textbf{MongoDB --- Redis --- Elasticsearch --- Firestore --- MySQL}} \\ [0.5em]
-
-%         \textbf{processes}
-%             & \textbf{\textbf{Kanban --- Agile --- Scrum}} \\ [1em]
-
-%         \textbf{work experience}
-%             & \textbf{\textsc{\href{https://amadeus.com/en}{Amadeus}}} --- \textit{Full Stack Engineer} & \textit{Mar 2021 - present} \\ [0.25em]
-
-%             & - Worked on modernizing outdated arch. \& migrating legacy systems to the cloud. \\
-%             & - Helped plan and implement infrastructure migration from \textbf{On-prem \& GCP} to \textbf{Azure}. \\
-%             & - Aided in the design of a new \textbf{MFA} system, enhancing account security for millions. \\
-%             & - Successfully migrated multiple services to \textbf{Rancher k8s} with caching, resulting in self-healing deployments and improved capacity and reduced database load for Black Friday. \\
-%             & - Designed, built and tested highly performant \textbf{APIs}. \\
-%             & - Extensive on-call experience, leading efforts to recover from sev 1-3 incidents. \\
-%             & - Led standups \& planning sessions, pushing multiple features into the dev pipeline + \textbf{onboarding} new engineers. \\ [2em]
-
-%             % ADD ON-CALL EXPERIENCE HERE
-
-%             & \textbf{\textsc{\href{https://www.neurovine.ai/}{Neurovine}} } --- Start up --- \textit{Software Engineer}  & \textit{Apr 2019 - Feb 2021} \\ [0.25em]
-
-%             & - Developed secure \textbf{Serverless APIs} built on \textbf{AWS Lambda} in \textbf{Python} that drove our mobile app as-well as our research and data-science pipelines. \\
-%             & - Worked on low-level bluetooth communication software for our wearable EEG headset. \\
-% 		    & - Shipped a mobile app \& a research portal built w/ \textbf{Ionic}. \\
-% 		    & - Worked closely with the data science team to integrate \textbf{ML} models into the platform. \\
-% 		    & - Implemented \textbf{HIPAA} compliance requirements across our systems/designs. \\ [1em]
-
-%         \textbf{projects}
-%             & - \textbf{\textsc{\href{https://www.withprincipal.com/}{Principal}} } --- \textit{React \& Go} & \textit{present} \\
-%             & \quad • Developed a full-stack web application using a \textbf{Go REST API} and a \textbf{React} frontend. \\
-%             & \quad • Implemented automated FX rate system to power multicurrency account metrics \\
-%             & \quad • Integrated w/ \textbf{Plaid} to consume real-time financial data. \\
-%             & \quad • Created a search engine using \textbf{Elasticsearch} to index and search transactions. \\
-%             & \quad • Implemented a caching layer using \textbf{Redis} to reduce the number of API calls to Plaid. \\
-%             & \quad \space \space \space to the backend where they're processed u/ Redis-backed background workers. \\ [0.5em]
-
-%             & - \textbf{\textsc{SPC x OpenAI Hackathon} } & \textit{present} \\
-%             & \quad • Co-created a tool to identify divisive tweets and draft replies using de-escalation techniques aimed at reducing online polarization on political subjects. \\ [2em]
-
-%             % & \textbf{\textsc{\href{https://github.com/boshd/handshake}{Handshake}}} & \textit{2020-2022} \\
-%             & - Realtime group chat w/ built-in event management --- \textit{iOS (Swift) \& Serverless} \href{https://github.com/boshd/handshake}{$\rightarrow$} & \textit{2020-2022} \\ [0.5em]
-
-%             % & \textbf{\textsc{\href{https://github.com/boshd/rp}{\textbf{rp}}}} & \textit{2018} \\
-%             & - Multithreaded HTTP Redis proxy w/ an LRU cache --- \textit{Python} \href{https://github.com/boshd/rp}{$\rightarrow$} & \textit{2022} \\ [0.5em]
-
-%             % & \textbf{\textsc{\href{https://github.com/boshd/neuralnets}{\textbf{Neural Networks}}}} & \textit{Summer 2020} \\
-%             & - Hopfield, RBF \& Conv. neural network implementations --- \textit{Python \& TensorFlow} \href{https://github.com/boshd/neuralnets}{$\rightarrow$} & \textit{Summer 2020} \\ [0.5em]
-
-%             % & \textbf{\textsc{\href{https://github.com/boshd/advatck}{\textbf{Gaussian---Carlini-Wagner Adversarial Attacks}}}}\ & \textit{Winter 2020} \\
-%             & - Analyzing Gaussian \& adversarial perturbations on a CNN's latent space \href{https://github.com/boshd/advatck}{$\rightarrow$} & \textit{Winter 2020} \\ [0.5em]
-
-%             & \textit{More \textbf{projects} on \href{https://github.com/boshd}{\textbf{github}}}.\\ [1em]
-
-%         \textbf{research}
-%             & \textbf{\textsc{IoT Lab @ Carleton University}} & \textit{2017 - 2019} \\
-%             & \textit{Research assistant} \\
-%             & - Conducted research on ML applications for Smart Grid energy systems. \\
-%             & - Built a real-time multi-modal data streaming system using a Rasp. Pi and IBM Cloud. \\
-%             & - Published two conference papers. \\
-%             & - Worked on a Type II diabetes self management tool project. \\ [1em]
-%             & List of \textbf{Publications} on \textit{\href{https://scholar.google.ca/citations?user=zFDREhgAAAAJ\&hl=en}{\textbf{Scholar}}}.\\ [0.5em]
-
-%         \textbf{education}
-%             & \textbf{\textsc{Carleton University}} & \textit{Spring 2020} \\
-%             & Bachelor of Computer Science (BSc) \\ [1em]
-
-%         \textbf{achievements}
-%             & \textbf{\textsc{Shopify --- Build Things App Award}} & \textit{Nov 2018} \\
-%             & \textit{Winner of the best App award @ Shopify's Build Things App Showcase}. \\ [1em]
-
-
-%   \end{longtable}
-
-% \end{document}
-
 \documentclass[9pt]{article}
-\usepackage{array,longtable, pagecolor, xcolor}
+\usepackage{array,longtable,pagecolor,xcolor}
 \usepackage{hyperref}
 \usepackage[T1]{fontenc}
 \usepackage{fontawesome}
-\usepackage[margin=1cm]{geometry}
+\usepackage[margin=0.75cm]{geometry}
 \usepackage{titlesec}
-\titlespacing*{\section} {0pt}{2.83ex}{2ex}
+\titlespacing*{\section}{0pt}{1.5ex}{1ex}
 \pagenumbering{gobble}
 \pagecolor{white}
-
 
 \makeatletter
 \newcommand{\globalcolor}[1]{%
@@ -168,93 +29,76 @@
 \begin{document}
 
 \begin{center}
-    {\LARGE Kareem Arab}\par\smallskip
-    Full Stack Generalist | \href{mailto:me@kareemarab.com}{me@\textit{kareemarab.com}} | Ottawa, Canada --- Remote
+    {\LARGE \textbf{Kareem Arab}}\par\smallskip
+    Full Stack Engineer | \href{mailto:me@kareemarab.com}{me@\textit{kareemarab.com}} | Ottawa, Canada (Remote)
 \end{center}
 
-\section*{Technical Skills}
+\section*{Technical Expertise}
 \begin{itemize}
     \setlength\itemsep{0em}
-    \item Languages: Python, Go, Swift, TypeScript, \LaTeX
-    \item Frameworks/Technologies: React, NextJS, iOS, Serverless, K8s, CI/CD (Jenkins, GitHub Actions, etc.), Firebase, Plaid
-    \item Libraries: TensorFlow, UIKit, Tailwind, PyTorch (elementary proficiency)
-    % \item Cloud Platforms: AWS, GCP, Azure, Vercel
-    % \item Databases: MongoDB, Redis, Elasticsearch, Firestore, MySQL
-    % merge the two lines above
-    \item \textbf{Cloud Platforms:} AWS, GCP, Azure, Vercel; \textbf{Databases:} MongoDB, Redis, Elasticsearch, Firestore, MySQL
-    % \item Processes: Kanban, Agile, Scrum
+    \item \textbf{Languages:} Python, Go, Swift, TypeScript, JavaScript, \LaTeX
+    \item \textbf{Frameworks/Technologies:} React, NextJS, iOS, Serverless, Kubernetes, CI/CD, Firebase, Plaid, Stripe, REST APIs, GraphQL
+    \item \textbf{AI/ML:} TensorFlow, PyTorch, Natural Language Processing
+    \item \textbf{Cloud \& Databases:} AWS, GCP, Azure, Vercel, MongoDB, Redis, Firestore, MySQL
+    \item \textbf{DevOps \& Methodologies:} Docker, Terraform, Agile, Scrum, Kanban, Test-Driven Development (TDD)
 \end{itemize}
 
-\section*{Experience}
+\section*{Work}
 
 \noindent
-\textbf{\href{https://amadeus.com/en}{Amadeus}}, Full Stack Engineer, Mar 2021 - present
+\textbf{\href{https://amadeus.com/en}{Amadeus}}, Full Stack Engineer, Mar 2021 - Present
 \begin{itemize}
     \setlength\itemsep{0em}
-    \item Supported infrastructure transition from On-prem \& GCP to Azure, optimizing operational efficiency.
-    \item Contributed to the design and implementation of a new MFA system, improving user security.
-    \item Played a key role in service migration to Rancher K8s, improving deployment reliability and reducing database load.
-    \item Extensive experience in incident management, improving system recovery processes and documentation.
-    \item Assisted in onboarding new engineers and facilitated team meetings, improving team integration and efficiency.
+    \item Contributed to cloud migration from on-prem \& GCP to Azure, improving scalability and reducing operational costs
+    \item Collaborated on implementing a robust MFA system, enhancing security for millions of users
+    \item Assisted in migration to Kubernetes, contributing to 99.99\% uptime and reduced database load
+    \item Actively participated in incident management, helping to improve MTTR through enhanced processes
+    \item Supported junior engineers and contributed to Agile ceremonies, fostering team productivity
 \end{itemize}
 
 \noindent
 \textbf{\href{https://neurovine.ai}{Neurovine}}, Founding Software Engineer, Apr 2019 - Feb 2021
 \begin{itemize}
     \setlength\itemsep{0em}
-    \item Developed secure serverless APIs on AWS Lambda, enhancing mobile and research platform efficiency.
-    \item Led the integration of ML models into the platform, introducing real-time inference to aid w/ patient concussion recovery.
-    \item Implemented HIPAA compliance standards, ensuring data protection and privacy.
-    \item Worked on low-level Bluetooth communication software for wearable EEG hardware.
+    \item Developed high-performance, HIPAA-compliant serverless APIs on AWS Lambda for mobile and research platforms
+    \item Worked on integrating real-time ML inference models to aid patient concussion recovery
+    \item Contributed to low-latency Bluetooth communication for wearable EEG devices, improving data accuracy
+    \item Implemented end-to-end encryption and HIPAA compliance measures, ensuring data protection and privacy
 \end{itemize}
 
-\section*{Projects}
+\section*{Notable Projects}
 
 \begin{itemize}
-    \item \textbf{\href{https://withprincipal.com}{Principal}}: Financial management platform designed to centralize, simplify, and empower users' financial oversight.
-
-
-    \item\textbf{SPC x OpenAI Hackathon}:
-        Co-created a tool that identifies polarizing tweets related to highly contentious issues and drafts responses with a focus on evidence-based de-escalation methods to reduce polarization and partisan animosity.
-
-    \noindent
-        \setlength\itemsep{0em}
-        \item \textbf{\href{https://github.com/boshd/handshake}{Handshake}}: Real-time group chat application with integrated event management, developed u/ iOS and Serverless.
-
-        \item \textbf{\href{https://github.com/boshd/rp}{RP}}: Designed and implemented a multithreaded HTTP proxy with an LRU cache using Python.
-
-        \item \textbf{\href{https://github.com/boshd/neuralnets}{Neural Network Impl.}}: Hopfield, RBF, and convolutional neural network impl. u/ Python and TensorFlow.
-
-        \item \textbf{\href{https://github.com/boshd/advatck}{Adversarial Attacks}}: Conducted analysis on the impact of Gaussian and Carlini-Wagner adversarial perturbations on the latent space of convolutional neural networks.
-
-    % italics
-    \textit{For more projects, visit \href{https://github.com/boshd}{github}.}
-
+    \setlength\itemsep{0em}
+    \item \textbf{\href{https://withprincipal.com}{Principal}:} AI-driven wealth management platform. First Place Fintech Product on ProductHunt. Tech: Go, React, ML
+    \item \textbf{SPC x OpenAI Hackathon:} Developed an AI tool for reducing online polarization using NLP and GPT models
+    \item \textbf{\href{https://github.com/boshd/handshake}{Handshake}:} Real-time group chat iOS app with event management. Tech: Swift, Firebase, WebSockets
+    \item \textbf{\href{https://github.com/boshd/rp}{RP}:} High-performance HTTP proxy with LRU cache. Tech: Python, Multithreading
+    \item \textbf{\href{https://github.com/boshd/neuralnets}{Neural Network Implementations}:} Custom implementations of various neural network architectures
+    \item \textbf{\href{https://github.com/boshd/advatck}{Adversarial ML Research}:} Analyzed impact of adversarial attacks on CNN latent spaces
 \end{itemize}
 
 \section*{Research}
 \textbf{IoT Lab @ Carleton University}, Research Assistant, 2017 - 2019
 \begin{itemize}
-        \setlength\itemsep{0em}
-        \item Conducted research focused on the application of machine learning in smart grid energy systems.
-        \item Led the development of a diabetes self-management tool.
-        \item Developed a multi-modal data streaming system, enhancing data collection and analysis capabilities.
-        \item Advised multiple 4th-year capstone projects.
-
-    \textit{For publications, visit \href{https://scholar.google.ca/citations?user=zFDREhgAAAAJ\&hl=en}{scholar}.}
+    \setlength\itemsep{0em}
+    \item Conducted ML research for smart grid energy systems, resulting in 2 published conference papers
+    \item Developed an ML-based diabetes management tool
+    \item Built real-time multi-modal data streaming system using Raspberry Pi and IBM Cloud
+    \item Mentored multiple 4th-year capstone projects, fostering innovation in IoT applications
 \end{itemize}
 
-
-\section*{Education}
-\textbf{Carleton University}, Bachelor of Computer Science (BSc), Spring 2020
-
-\section*{Achievements}
+\section*{Education \& Achievements}
+\textbf{Carleton University}, B.Sc. in Computer Science, Spring 2020
 \begin{itemize}
     \setlength\itemsep{0em}
-    \item Awarded the Shopify Build Things Hackathon App Award, Nov 2018, for the most innovative iOS app.
+    \item Shopify Build Things Hackathon App Award (2018): Most innovative iOS app
+    \item Published researcher: \href{https://scholar.google.ca/citations?user=zFDREhgAAAAJ\&hl=en}{Google Scholar Profile}
 \end{itemize}
 
-% \section*{Publications}
-% My publications can be found here on \href{https://scholar.google.ca/citations?user=zFDREhgAAAAJ\&hl=en}{google scholar}
+\vspace{-0.5em}
+\begin{center}
+    \textit{Agentic problem-solver with a track record of delivering high-impact, scalable solutions in AI, ML, and full-stack engineering}
+\end{center}
 
 \end{document}
