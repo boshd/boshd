@@ -25,8 +25,6 @@ A new city. A steady income. Late-night calls that turned into habits. The kind 
 
 That’s the thing about local minimums: they’re comfortable. They reward you just enough to keep you still. You tell yourself this must be it—this must be happiness, or adulthood, or love. You write essays in your head about how far you’ve come. You silence the part of you that wonders why you still feel hollow the moment the noise fades.
 
-There was someone who looked at me like I was already whole. I leaned into that gaze like it was proof. I let myself believe that being seen was the same as being known. But over time, I began to realize I had given the best parts of myself to the performance of selfhood, not the substance of it. I played the role so well I started to forget it was a role at all.
-
-I think what scared me most wasn’t losing her. It was the quiet that came after—the one that asked: *And now what?* The moment the mirror shattered and all I could see were my own hands, holding the pieces.
+The trap I fell into was that I let myself believe that being seen was the same as being known. But over time, I began to realize I had given the best parts of myself to the performance of selfhood, not the substance of it. I played the role so well I started to forget it was a role at all.
 
 It’s humbling to realize you’ve been circling a version of yourself you no longer recognize. That even self-awareness, if untested, can calcify into delusion. That’s when I understood: growth isn’t loud. It doesn’t announce itself. It slips in through the cracks, usually after something breaks.
