@@ -1,7 +1,7 @@
 ---
 title: 'tangents'
 category: 'note'
-excerpt: ''
+excerpt: 'fleeting reflections'
 # coverImage: '/assets/blog/dynamic-routing/cover.jpg'
 date: '2025-08-20T14:31:35+00:00'
 author:
