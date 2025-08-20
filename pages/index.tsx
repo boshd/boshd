@@ -17,8 +17,8 @@ const Home = ({ allPosts }: Props) => {
         <div className="text-center md:text-left lg:text-left xl:text-left">
         <label className="text-gray-500">
           engineering @{" "}
-          <a className="text-blue-400" href="https://amadeus.com" target={"_blank"} rel="noreferrer">
-            amadeus
+          <a className="text-blue-400" href="https://ada.cx" target={"_blank"} rel="noreferrer">
+            ada
           </a>{" "}
         </label>
         <br />
