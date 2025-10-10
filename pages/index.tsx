@@ -24,8 +24,8 @@ const Home = ({ allPosts }: Props) => {
         <br />
         <label className="text-gray-500">
           building{" "}
-          <a className="text-blue-400" href="https://withprincipal.com" target={"_blank"} rel="noreferrer">
-            principal
+          <a className="text-blue-400" href="https://joinbrisa.com" target={"_blank"} rel="noreferrer">
+            brisa
           </a>{" "}
         </label>
         </div>
