@@ -1,11 +1,8 @@
-\documentclass[9pt]{article}
-\usepackage{array,longtable,pagecolor,xcolor}
+\documentclass[10pt]{article}
+\usepackage{array,longtable,xcolor}
 \usepackage{hyperref}
 \usepackage[T1]{fontenc}
-\usepackage{fontawesome}
 \usepackage[margin=0.75cm]{geometry}
-\usepackage{titlesec}
-\titlespacing*{\section}{0pt}{1.5ex}{1ex}
 \pagenumbering{gobble}
 \pagecolor{white}
 
@@ -13,6 +10,7 @@
 \newcommand{\globalcolor}[1]{%
   \color{#1}\global\let\default@color\current@color
 }
+\renewcommand\section{\@startsection{section}{1}{0pt}{1.5ex}{1ex}{\normalfont\large\bfseries}}
 \makeatother
 
 \AtBeginDocument{\globalcolor{black}}
@@ -30,61 +28,63 @@
 
 \begin{center}
     {\LARGE \textbf{Kareem Arab}}\par\smallskip
-    Full Stack Engineer | \href{mailto:me@kareemarab.com}{me@\textit{kareemarab.com}} | Ottawa, Canada (Remote)
+    Applied AI Engineer | \href{mailto:me@kareemarab.com}{me@\textit{kareemarab.com}} | Remote, open to relocation
 \end{center}
 
-\section*{Technical Expertise}
-\begin{itemize}
-    \setlength\itemsep{0em}
-    \item \textbf{Languages:} Python, Go, Swift, TypeScript, JavaScript, \LaTeX
-    \item \textbf{Frameworks/Technologies:} React, NextJS, iOS, Serverless, Kubernetes, CI/CD, Firebase, Plaid, Stripe, REST APIs
-    \item \textbf{AI/ML:} TensorFlow, PyTorch, LangChain, LangSmith, OpenAI, Anthropic, LLM Agents, Vector Stores
-    \item \textbf{Cloud \& Databases:} AWS, GCP, Azure, Vercel, MongoDB, Redis, Firestore, MySQL
-    \item \textbf{DevOps \& Methodologies:} Docker, Terraform, Agile, Scrum, Kanban, Test-Driven Development (TDD)
-\end{itemize}
+\noindent
+Applied AI engineer building production agents, voice systems, and product infrastructure. Product-minded engineer with startup and enterprise experience across AI, finance, healthcare, and travel.
 
-\section*{Work}
+\section*{Experience}
 
 \noindent
 \textbf{\href{https://ada.cx}{Ada}}, Software Engineer, Voice AI, Nov 2024 - Present
 \begin{itemize}
     \setlength\itemsep{0em}
-    \item Lead effort to improve integration of CPAAS platforms with AI Voice Agent: Major improvement in the UX, integration process, and 85-95\% cost reduction in telephony cost
-    \item Led voice intern interviews; hiring primary for senior engineering roles
-    \item Delivered core component of a modality-agnostic reasoner; designed long-silence handling
+    \item Contributed to Ada's Unified Reasoning Engine, a modality-agnostic AI agent harness powering reasoning across voice and digital channels.
+    \item Led CPaaS integration improvements for Ada's AI Voice Agent, reducing telephony costs 85-95% while improving integration and voice UX.
+    \item Led multilingual expansion for LLM-native knowledge ingestion, adding new language support and reducing search latency by ~500ms.
+    \item Designed long-silence detection for voice conversations, improving latency, robustness, and end-user conversation flow.
+    \item Built LLM evaluation and A/B testing workflows to measure voice agent quality, latency, and production behavior.
+    \item Owned privacy/data deletion pipeline work supporting enterprise compliance requirements across regulated customer environments.
+    \item Led intern and technical interviews for the Voice team, contributing to 6 hires across interns and senior engineers.
 \end{itemize}
 
 \noindent
-\textbf{\href{https://amadeus.com/en}{Amadeus}}, Full Stack Engineer, Mar 2021 - Nov 2024
+\textbf{\href{https://amadeus.com/en}{Amadeus}}, Software Engineer, Mar 2021 - Nov 2024
 \begin{itemize}
     \setlength\itemsep{0em}
-    \item Contributed to cloud migration from on-prem \& GCP to Azure, improving scalability and reducing operational costs
-    \item Collaborated on implementing a robust MFA system, enhancing security for millions of users
-    \item Assisted in migration to Kubernetes, contributing to 99.99\% uptime and reduced database load
-    \item Actively participated in incident management, helping to improve MTTR through enhanced processes
-    \item Supported junior engineers and contributed to Agile ceremonies, fostering team productivity
+    \item Designed and ran A/B tests for product features; analyzed results to drive data-informed decisions
+    \item Led cloud migration from on-prem \& GCP to Azure, improving scalability and reducing operational costs
+    \item Built MFA system serving millions of users; migrated to Kubernetes achieving 99.99\% uptime
+    \item Improved incident response processes, reducing MTTR; mentored junior engineers
 \end{itemize}
 
 \noindent
 \textbf{\href{https://neurovine.ai}{Neurovine}}, Founding Software Engineer, Apr 2019 - Feb 2021
 \begin{itemize}
     \setlength\itemsep{0em}
-    \item Developed high-performance, HIPAA-compliant serverless APIs on AWS Lambda for mobile and research platforms
-    \item Worked on integrating real-time ML inference models to aid patient concussion recovery
-    \item Contributed to low-latency Bluetooth communication for wearable EEG devices, improving data accuracy
-    \item Implemented end-to-end encryption and HIPAA compliance measures, ensuring data protection and privacy
+    \item Zero-to-one: Built entire backend from scratch, including HIPAA-compliant serverless APIs on AWS Lambda
+    \item Integrated real-time ML inference for patient concussion recovery; shipped to production
+    \item Built low-latency Bluetooth stack for wearable EEG devices with end-to-end encryption
 \end{itemize}
 
-\section*{Notable Work}
+\section*{Selected AI \& Product Work}
 
 \begin{itemize}
     \setlength\itemsep{0em}
-    \item \textbf{\href{https://joinbrisa.com}{Brisa}:} AI wealth platform. First Place Fintech Product on ProductHunt. 1000+ users/200 active/\$55m total assets tracked. Tech: Go, React, AWS
+    \item \textbf{\href{https://joinbrisa.com}{Brisa}:} Founded AI wealth platform with 1000+ users and \$58m+ assets tracked; \#1 Fintech on Product Hunt.
     \item \textbf{\href{https://x.com/tomas_hk/status/1764725667130991022}{SPC x OpenAI Hackathon}:} Developed an AI tool for reducing online polarization using NLP and GPT models
     \item \textbf{\href{https://github.com/boshd/handshake}{Handshake}:} Real-time group chat iOS app with event management. Tech: Swift, Firebase, WebSockets
     \item \textbf{\href{https://github.com/boshd/rp}{RP}:} High-performance HTTP proxy with LRU cache. Tech: Python, Multithreading
-    \item \textbf{\href{https://github.com/boshd/neuralnets}{Neural Network Implementations}:} Custom implementations of various neural network architectures
-    \item \textbf{\href{https://github.com/boshd/advatck}{Adversarial ML Research}:} Analyzed impact of adversarial attacks on CNN's latent space
+\end{itemize}
+
+\section*{Technical Expertise}
+\begin{itemize}
+    \setlength\itemsep{0em}
+    \item \textbf{Applied AI:} AI Agents, Voice AI, LLM Evals, RAG, LangChain, LangSmith, OpenAI, Anthropic
+    \item \textbf{Voice Systems:} Telephony, CPaaS integrations, latency optimization, silence handling, conversational UX
+    \item \textbf{Backend \& Infra:} Python, Go, TypeScript, Kubernetes, Serverless, AWS, Azure, GCP, Redis, MongoDB
+    \item \textbf{Product Engineering:} React, Next.js, iOS, A/B Testing, REST APIs, WebSockets
 \end{itemize}
 
 \section*{Research}
@@ -104,10 +104,5 @@
     \item Shopify Build Things Hackathon App Award (2018): Most innovative iOS app
     \item Published researcher: \href{https://scholar.google.ca/citations?user=zFDREhgAAAAJ\&hl=en}{Google Scholar Profile}
 \end{itemize}
-
-\vspace{-0.5em}
-\begin{center}
-    \textit{Agentic problem-solver with a track record of delivering high-impact, scalable solutions in full-stack engineering and AI}
-\end{center}
 
 \end{document}

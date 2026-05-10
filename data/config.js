@@ -8,7 +8,7 @@ const config = {
 	pathPrefix: '',
 	dateFromFormat: 'YYYY-MM-DD',
 	dateFormat: 'MMMM Do, YYYY',
-	siteDescription: "kareem's apprehension",
+	siteDescription: 'Applied AI engineer building production agents, voice AI, eval systems, and AI products for finance.',
 	siteRss: '/rss.xml',
 	googleAnalyticsID: '',
 	postDefaultCategoryID: 'personal',
@@ -35,12 +35,8 @@ const config = {
 			link: 'https://github.com/boshd',
 		},
 		{
-			name: 'film',
-			link: 'https://vimeo.com/user81565542',
-		},
-		{
-			name: 'music',
-			link: 'https://soundcloud.com/itsmeka',
+			name: 'brisa',
+			link: 'https://joinbrisa.com',
 		},
 		{
 			name: 'resume',

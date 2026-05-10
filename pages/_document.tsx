@@ -2,7 +2,7 @@ import React from "react";
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import { getCssText } from "../stitches.config";
 
-export default class extends Document {
+export default class MyDocument extends Document {
   static async getInitialProps(ctx: any) {
     const initialProps = await Document.getInitialProps(ctx);
     return { ...initialProps };
@@ -22,9 +22,6 @@ export default class extends Document {
           <style id="stitches" dangerouslySetInnerHTML={{ __html: getCssText() }} />
 
           <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
-          <link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet" />
         </Head>
         <Main />
         <NextScript />

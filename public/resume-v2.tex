@@ -1,0 +1,103 @@
+\documentclass[9pt]{article}
+\usepackage{array,longtable,xcolor}
+\usepackage{hyperref}
+\usepackage[T1]{fontenc}
+\usepackage[margin=0.75cm]{geometry}
+\pagenumbering{gobble}
+\pagecolor{white}
+
+\makeatletter
+\newcommand{\globalcolor}[1]{%
+  \color{#1}\global\let\default@color\current@color
+}
+\makeatother
+
+\AtBeginDocument{\globalcolor{black}}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=blue,
+    pdftitle={Kareem's resume - Applied AI and Voice AI},
+    pdfpagemode=FullScreen,
+}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Kareem Arab}}\par\smallskip
+    Software Engineer, Applied AI \& Voice AI | \href{mailto:me@kareemarab.com}{me@\textit{kareemarab.com}} | Ottawa, Canada | Open to relocating or remote
+\end{center}
+
+\noindent
+Applied AI engineer specializing in Voice AI, LLM evaluation, and production-grade AI systems. I build low-latency, reliable AI products across reasoning, telephony, backend infrastructure, and user experience.
+
+\section*{Experience}
+
+\noindent
+\textbf{\href{https://ada.cx}{Ada}}, Software Engineer, Voice AI, Nov 2024 - Present
+\begin{itemize}
+    \setlength\itemsep{0em}
+    \item Led CPaaS integration for Ada's AI Voice Agent, redesigning telephony architecture to reduce call costs 85-95\% while improving voice UX
+    \item Built LLM evaluation pipelines and A/B testing workflows to measure voice agent quality, latency, and production behavior
+    \item Delivered core modality-agnostic reasoning components powering conversational AI across voice and non-voice channels
+    \item Designed long-silence handling and interaction patterns for more natural, resilient voice conversations
+\end{itemize}
+
+\noindent
+\textbf{\href{https://amadeus.com/en}{Amadeus}}, Software Engineer, Mar 2021 - Nov 2024
+\begin{itemize}
+    \setlength\itemsep{0em}
+    \item Built authentication and MFA systems serving millions of users with 99.99\% uptime requirements
+    \item Led migration of authentication services from on-prem/GCP to Azure and Kubernetes, improving scalability and operational ownership
+    \item Designed and ran A/B tests for product features, using experimentation data to guide product and engineering decisions
+    \item Improved incident response practices and mentored junior engineers across delivery, reliability, and operations
+\end{itemize}
+
+\noindent
+\textbf{\href{https://neurovine.ai}{Neurovine}}, Founding Software Engineer, Apr 2019 - Feb 2021
+\begin{itemize}
+    \setlength\itemsep{0em}
+    \item Built HIPAA-compliant backend systems from zero to production using AWS Lambda and serverless infrastructure
+    \item Integrated real-time ML inference into patient-facing concussion recovery workflows
+    \item Built low-latency Bluetooth and data pipelines for wearable EEG devices with end-to-end encryption
+\end{itemize}
+
+\section*{Selected AI \& Product Work}
+
+\begin{itemize}
+    \setlength\itemsep{0em}
+    \item \textbf{\href{https://joinbrisa.com}{Brisa}:} AI wealth platform with 1000+ users and \$55m assets tracked. \#1 Fintech on Product Hunt. Go, React, AWS
+    \item \textbf{\href{https://x.com/tomas_hk/status/1764725667130991022}{SPC x OpenAI Hackathon}:} Built an AI tool for reducing online polarization using NLP and GPT-based reasoning
+    \item \textbf{\href{https://github.com/boshd/handshake}{Handshake}:} Real-time iOS group chat and event platform using Swift, Firebase, and WebSockets
+    \item \textbf{\href{https://github.com/boshd/rp}{RP}:} High-performance HTTP proxy with LRU caching. Python, multithreading
+\end{itemize}
+
+\section*{Technical Expertise}
+\begin{itemize}
+    \setlength\itemsep{0em}
+    \item \textbf{Applied AI:} Voice AI, LLM Agents, LLM Evals, RAG, LangChain, LangSmith, OpenAI, Anthropic
+    \item \textbf{Voice Systems:} Telephony, CPaaS integrations, latency optimization, silence handling, conversational UX
+    \item \textbf{Backend \& Infra:} Python, Go, TypeScript, Kubernetes, Serverless, AWS, Azure, GCP, Redis, MongoDB
+    \item \textbf{Product Engineering:} React, Next.js, iOS, A/B Testing, REST APIs, WebSockets
+\end{itemize}
+
+\section*{Research}
+\textbf{IoT Lab @ Carleton University}, Research Assistant, 2017 - 2019
+\begin{itemize}
+    \setlength\itemsep{0em}
+    \item Conducted ML research for smart grid energy systems, resulting in 2 published conference papers
+    \item Built real-time multi-modal data streaming systems using Raspberry Pi and IBM Cloud
+    \item Mentored multiple 4th-year capstone projects
+\end{itemize}
+
+\section*{Education \& Achievements}
+\textbf{Carleton University}, B.Sc. in Computer Science, Spring 2020
+\begin{itemize}
+    \setlength\itemsep{0em}
+    \item Shopify Build Things Hackathon App Award (2018): Most innovative iOS app
+    \item Published researcher: \href{https://scholar.google.ca/citations?user=zFDREhgAAAAJ\&hl=en}{Google Scholar Profile}
+\end{itemize}
+
+\end{document}

@@ -1,9 +1,10 @@
 import "../styles/globals.css";
+import "@fontsource/geist-sans";
 import type { AppProps } from "next/app";
 import Layout from "../components/Layout";
 import { ThemeProvider } from "next-themes";
 import { DesignSystemProvider, darkTheme } from "@modulz/design-system";
-import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from "@vercel/analytics/react";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
